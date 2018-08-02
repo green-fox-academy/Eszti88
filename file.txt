@@ -1,0 +1,4 @@
+content
+Echo a string to a file:
+echo "content" >> file.txt
+This way I now have a file named file.txt which contains a word: content. Cool!
