@@ -5,9 +5,17 @@
 
 let baseNum: number = 123;
 
-function doubling(number: number) {
+/* function doubling(number: number) {
     number = baseNum * 2;
     console.log(number);
+} 
+
+(doubling(baseNum)); */
+
+function doubling (inputNumber: number ){
+    return inputNumber *2;
 }
 
-(doubling(baseNum));
+let answer = doubling(baseNum);
+console.log(answer);
+
