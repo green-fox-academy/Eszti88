@@ -8,10 +8,12 @@ export { };
 function sum(givenNumber: number) {
     let myNum: number = 0;
     for (let i = 0; i < givenNumber; i++) {
-    myNum = myNum + i;
+        myNum = myNum + i;
+    }
+    return myNum; 
 }
-return myNum;   
-}
+
+
 
 console.log(sum(8));
 
