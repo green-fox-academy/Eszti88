@@ -7,8 +7,6 @@ export{}
 let name: string = 'Greenfox';
 
 let greet = function (greeting: string = 'Visitor!') {
-    /*greeting = 'Greetings, dear' + name;
-    return greeting;*/
     console.log("Greetings, dear " + greeting);
 }
 
