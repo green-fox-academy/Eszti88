@@ -5,4 +5,7 @@ export {};
 //    with the following content: `[1, 3, 5, 7]`
 // -  Print the third element of `magicNumbers`
 
-let magicNumbers: numbers = [1, 3, 5, 7];
+let magicNumbers: number [] = [1, 3, 5, 7];
+
+console.log(magicNumbers[2]);
+
