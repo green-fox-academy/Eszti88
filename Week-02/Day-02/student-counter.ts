@@ -16,23 +16,40 @@ const students: any[] = [
     { name: 'George', age: 10, candies: 1 }
 ];
 
+// How many candies are owned by students:  
+// IT'S NOT RUNNING, WUT DA FUK???      
+
+function candyCounter(input: object[]) {
+    let sum: number = 0;
+    for (let i: number = 0; i < input.length; i++) {
+        sum = sum + input[i]["candies"];      
+    } 
+    return sum;
+}
+
+console.log(candyCounter(students));
+
+// Sum of the age of people who have lass than 5 candies
+
+function sumOfAge(listOfObjects: Object[]) {
+    let sum: number = 0;
+    listOfObjects.forEach(elem => {
+      if (elem["candies"] < 5) {
+        sum += elem["age"];
+      }
+    });
+    return sum;
+  }
+  
+  console.log(sumOfAge(students));
+ 
+
+//candyCounter([{name: 'Theodor', age: 3, candies: 2}])
+
+// With Márk's help:
 /* function candyCounter(input: object[]) {
 
    prints out who has how many candies
 
     for (let i: number = 0; i < input.length; i++) {
         console.log(input[i]['name'], input[i]['candies']); } */
-
-function candyCounter(input: object[]) {
-    for (let i: number = 0; i < input.length; i++) {
-        console.log();
-        
-    }
-}
-
-        console.log(input);   
-
-
-
-candyCounter(students);
-//candyCounter([{name: 'Theodor', age: 3, candies: 2}])
