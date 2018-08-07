@@ -5,8 +5,9 @@ export{};
 //    which logs to the console the input parameters
 //    (can have multiple number of arguments)
 
-function printParams(inputNumber: number) {
-    let inputNumber: number = (1 , 3);
-    return inputNumber
-}
-console.log(printParams(inputNumber))
+function printParams(inputNumber: any[]) {
+  for (let i: number = 0; i < inputNumber.lenght; i++) {
+      console.log(inputNumber[i]);      
+  }
+
+  printParams();
