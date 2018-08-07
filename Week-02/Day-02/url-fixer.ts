@@ -6,6 +6,6 @@ export{};
 
 let url: string = 'https//www.reddit.com/r/nevertellmethebots';
 
-let urlCorrection: string = url.replace('https//www.reddit.com/r/nevertellmethebots', 'https://www.reddit.com/r/nevertellmetheodds');
+let fixedUrl: string = url.replace('https//www.reddit.com/r/nevertellmethebots', 'https://www.reddit.com/r/nevertellmetheodds');
 
-console.log(urlCorrection);
+console.log(fixedUrl);
