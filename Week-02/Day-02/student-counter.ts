@@ -17,8 +17,7 @@ const students: any[] = [
 ];
 
 // How many candies are owned by students:  
-// IT'S NOT RUNNING, WUT DA FUK???      
-
+  
 function candyCounter(input: object[]) {
     let sum: number = 0;
     for (let i: number = 0; i < input.length; i++) {
