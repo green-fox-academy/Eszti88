@@ -1,3 +1,5 @@
+'use strict';
+
 // A program that prints the results of a few operations on two numbers that are 22 and 13
 
 // 13 added to 22
@@ -12,9 +14,9 @@
 
 
 
-console.log ( 22 + 13 );
-console.log ( 22 - 13 );
-console.log ( 22 * 13 );
-console.log ( 22 / 13 );
-console.log ( 22 % 13 );
+console.log(22 + 13);
+console.log(22 - 13);
+console.log(22 * 13);
+console.log(22 / 13);
+console.log(22 % 13);
 

@@ -1,3 +1,5 @@
+'use strict';
+
 //Define several things as a variable and print their values
 
 var var1: number = 10;

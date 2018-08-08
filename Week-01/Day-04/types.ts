@@ -1,3 +1,5 @@
+'use strict';
+
 //String
 console.log('Hello World!');
 
