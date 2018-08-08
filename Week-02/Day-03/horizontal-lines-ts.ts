@@ -21,7 +21,7 @@ function coordinates (x: number, y: number) {
     ctx.stroke();    
 }
 
-for (let i: number =0; i < 400; i+= 130) {
+for (let i: number =0; i < 400; i+= 150) {
     coordinates(0, i);
 }
 

@@ -27,15 +27,6 @@ for (let i: number =0; i < 400; i+=130) {
 
 coordinates(20, 20);
 
-
-
-
-
-
-
-
-
-
 // loop mellőzésével
 
 /* ctx.strokeStyle = "black";
