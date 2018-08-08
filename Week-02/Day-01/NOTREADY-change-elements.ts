@@ -7,6 +7,6 @@ export {};
 // -  Print the fourth element as a test
 
 let numList: number[] = [1, 2, 3, 8, 5, 6];
-let numList2 = numList.map (function (elem: number) {
-    return elem
-})
+let numList2 = numList.map(function (8, [3]));
+
+console.log(numList[3]);
