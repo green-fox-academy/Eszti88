@@ -1,3 +1,5 @@
+'use strict';
+
 // a=3, make it bigger by 10
 
 let a: number = 3 + 10;

@@ -1,4 +1,5 @@
 'use strict';
+
 // Create a program that repeats the following sentence 100 times: I won't cheat on the exam!
 
 for (let i: number = 0; i < 100; i++) {

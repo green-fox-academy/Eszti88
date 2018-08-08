@@ -1,3 +1,5 @@
+'use strict';
+
 // number=15, create a program that prints the
 // multiplication table with number
 

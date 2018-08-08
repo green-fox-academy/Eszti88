@@ -1,5 +1,6 @@
+'use strict';
+
 // if a is even increment out by one
-// WHAT DOES THE QUESTION MEAN????????????????????
 
 let a: number = 24;
 let out: number = 0;
@@ -26,7 +27,6 @@ if (10 < b && b < 20) {
 console.log(out2);
 
 // c=123, credits=100, bonus=false
-// OMAJGAD
 
 let c: number = 123;
 let credits: number = 100;
@@ -40,9 +40,9 @@ let isBonus: boolean = false;
 
 if (credits >= 50 && isBonus == false) {
     c = c - 2;
-} else if ( credits < 50 && isBonus == false) {
+} else if (credits < 50 && isBonus == false) {
     c -= 1;
-} if( isBonus ) {
+} if (isBonus) {
     c = c;
 }
 
@@ -59,5 +59,4 @@ if (d % 4 == 0 && time <= 200) {
     console.log("Time out");
 } else {
     console.log("Run Forest Run");
-
 }

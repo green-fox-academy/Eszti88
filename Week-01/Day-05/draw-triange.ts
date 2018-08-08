@@ -1,3 +1,5 @@
+'use strict';
+
 let lineCount: number = 4;
 
 // Write a program that draws a triangle like this:
@@ -11,12 +13,12 @@ let lineCount: number = 4;
 
 for (let i: number = 0; i < lineCount; i++) {
     if (i == 0) {
-        console.log('*');        
+        console.log('*');
     } if (i == 1) {
-        console.log('**');        
+        console.log('**');
     } if (i == 2) {
-        console.log('***');        
+        console.log('***');
     } if (i == 3) {
-        console.log('****');                
+        console.log('****');
     }
 }
