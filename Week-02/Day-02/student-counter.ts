@@ -6,7 +6,6 @@ export { };
 // create a function that takes a list of students and logs:
 // - Sum of the age of people who have lass than 5 candies
 
-
 const students: any[] = [
     { name: 'Theodor', age: 3, candies: 2 },
     { name: 'Paul', age: 9.5, candies: 2 },
