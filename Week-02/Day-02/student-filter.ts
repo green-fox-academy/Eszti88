@@ -27,4 +27,20 @@ const students: any[] = [
   }
 
   console.log(atLeast4Candies(students));
+
+  //How many candies do they have on average
+
+  function candyCounter(input: any[]): number {
+      let sum: number = 0;
+      for (let i: number = 0; i < input.length; i++) {
+          sum = sum + input[i].candies;
+      }
+      let average: number = sum / input.length;
+      return average;
+  }
+  console.log(candyCounter(students));
+  
+
+
+
   
