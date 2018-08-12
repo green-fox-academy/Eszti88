@@ -25,12 +25,12 @@ function makingMatches(stringInput1, stringInput2) {    // a newStringhez adom a
 console.log(newString);
 
 
-let student: object =  {name: "MArk", age: 18, cat: false, dollaz: 15168784}
+/* let student: object =  {name: "MArk", age: 18, cat: false, dollaz: 15168784}
 let newStudent: object = student
 console.log(student)
 student['name'] = 'nemMark'
 console.log(student)
-console.log(newStudent);
+console.log(newStudent); */
 
 
 
