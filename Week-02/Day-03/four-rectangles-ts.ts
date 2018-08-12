@@ -6,27 +6,8 @@ const ctx = canvas.getContext('2d');
 // Draw four different size and color rectangles.
 // Avoid code duplication.
 
-
-
-let rectangles: object[] = [
-    {
-        colour: "yellow",
-        height: 30,
-        width: 50
-    },
-    {
-        colour: "blue",
-        height: 60,
-        width: 100
-    },
-    {
-        colour: "green",
-        height: 75,
-        width: 100
-    },
-    {
-        colour: "red",
-        height: 120,
-        width: 150
-    }
-];
+let myColor: string [] = ['red' , 'blue' , 'green' , 'yellow'];
+for (let i: number = 0; i < 4; i++) {
+    ctx.fillStyle = myColor[i];
+    ctx.fillRect( (i+1)*75 , (i+1)*75 , (i+1)*25, (i+1)*25);
+}
