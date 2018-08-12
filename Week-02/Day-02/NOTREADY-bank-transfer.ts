@@ -40,3 +40,31 @@ function getNameAndBalance (inputList: string[]) {
   transferAmount,
   accounts
 };*/
+
+function transferAmount(database, fromAccount, toAccount, amountOfMoney) {
+  let doesItExistNumber: number = 0;
+  database.forEach (function(elem) {
+    if (elem.accountNumber == fromAccount || elem.accountNumber == toAccount) {
+      doesItExistNumber += 1;
+    }
+  });
+  if (doesItExistNumber < 2) {
+    console.log('404 - account not found');    
+  }
+  else {
+    database.forEach (function(elem) {
+      if (elem.accountNumber == fromAccount) {
+        elem.balance -= amountOfMoney;
+      }});
+      database.forEach (function(elem) {
+        if (elem.accountNumber == toAccount) {
+          elem.balance += amountOfMoney;
+        }});
+        console.log(accounts);        
+  }
+}
+getNameAndBalance(11234543);
+transferAmount(accounts, 43546731, 23456311, 500.0);
+
+
+
