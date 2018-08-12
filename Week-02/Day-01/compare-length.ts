@@ -10,7 +10,7 @@ export{};
 let firstList: number[] = [1, 2, 3];
 let secondList: number[] = [4, 5];
 
-if (secondList.lenght > firstList.length) {
+if (secondList.length > firstList.length) {
     console.log("The second list has more elements than the first one");    
 } else {
     console.log("The second list has less elements than the first one");    

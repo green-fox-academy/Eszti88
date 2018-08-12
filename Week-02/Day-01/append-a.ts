@@ -9,12 +9,15 @@ export{}
 
 let typo: string = "Chinchill";
 
-function appendAFunc(inputString: string) {
+function appendAFunc(inputString: string) {  // a parameter az x !!!!!! 
     return inputString + 'a';
 }
 
 let answer = appendAFunc(typo);
 console.log(answer);
 
+function name(params:type) {
+    
+}
 
 
