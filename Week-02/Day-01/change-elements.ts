@@ -1,5 +1,5 @@
 'use strict';
-export {};
+export { };
 
 // -  Create an array named `numList` with the following 
 //    content: `[1, 2, 3, 8, 5, 6]`
@@ -7,6 +7,17 @@ export {};
 // -  Print the fourth element as a test
 
 let numList: number[] = [1, 2, 3, 8, 5, 6];
-let numList2 = numList.map(function (4, [3]));
 
-console.log(numList[3]);
+numList = numList.map(function (elem) {
+    if (elem == 8) {
+        elem = 4;
+    }
+    return elem
+}
+);
+console.log(numList);
+
+
+/* let numList2 = numList.map(function (4, [3]));
+
+console.log(numList[3]); */
