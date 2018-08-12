@@ -1,5 +1,5 @@
 'use strict';
-export{};
+export { };
 
 // Queue of festivalgoers at entry
 // no. of alcohol units
@@ -23,24 +23,3 @@ const queue: any[] = [
   { name: 'Joerg', alcohol: 20, guns: 0 }
 ];
 
-function securityCheck(inputArray: object[]) {
-  let whoCanEnter: string[] = [];
-  let watchlist: string[] = [];
-  let securityAlcoholLoot: number = 0;
-  for (let i: number = 0; i < inputArray.length; i++) {
-    if ( inputArray[i]["guns"] === 0 && (inputArray[i]["alcohol"] === 0)) {
-      whoCanEnter.push(inputArray[i]["name"]);
-    } else if (inputArray[i]["guns"] !== 0) {
-      watchlist.push(inputArray[i]["name"]);
-    } else if (inputArray[i]["alcohol"] !== 0) {
-      securityAlcoholLoot += inputArray[i]["alcohol"];
-      inputArray[i]["alcohol"] = 0;
-      whoCanEnter.push(inputArray[i]["name"]);
-    } else {}
-  };
-  return console.log('They can enter: ${whoCanEnter'}
-They are on the watchlist: ${watchlist}
-Alcohol amount: ${securityAlcoholLoot});  
-}
-
-securityCheck(queue);
