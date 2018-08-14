@@ -1,5 +1,6 @@
 declare function require(path: string): any;
 'use strict';
+export{};
 
 // Write a program that opens a file called 'my-file.txt', then prints
 // each of lines form the file.
