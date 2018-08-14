@@ -14,7 +14,8 @@ function divideNumber(inputNumber: number): any {
         }
         let result: number = 10 / inputNumber;
         return result;
-    } catch (e) {
+    }
+    catch (e) {
         return (e.message);
     }
 }
