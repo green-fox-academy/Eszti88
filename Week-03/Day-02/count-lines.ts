@@ -23,7 +23,8 @@ function countsLines(inputString: string): number {
         if (fileContent !== null) {
             return fileContent.split('\r\n').length;
         }
-    } catch {
+    }
+    catch {
         if (fileContent === null) {
             return 0;
         }
