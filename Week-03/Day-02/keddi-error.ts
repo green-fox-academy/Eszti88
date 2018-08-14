@@ -49,8 +49,8 @@ function countChar(char: string): number {
     if (fileContent !== null) {
         //fileContent.split('\r\n')    //   split \r\n-nel széttörjük sorokra a tartalmat
         //console.log(fileContent);
-        fileContent.split('\r\n').forEach(e => {
-            e.split('').forEach(elem => {
+        fileContent.split('\r\n').forEach(e => {    //sorokra bont
+            e.split('').forEach(elem => {           //betűkre bont
                 if (elem === 'a') {
                     result++;
                 }

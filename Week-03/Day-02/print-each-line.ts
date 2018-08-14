@@ -12,11 +12,11 @@ const charEncoding = 'utf-8';
 
 // létrehozom a my-file.txt-t
 
-function writeToAFile(fileName: string, data: any): void {
+/*function writeToAFile(fileName: string, data: any): void {
     fs.writeFileSync(fileName, data);
 }
 
-writeToAFile('my-file.txt', 'this is the first row');
+writeToAFile('my-file.txt', 'this is the first row');*/
 
 
 // itt pedig megnyitom és kiíratom a tartalmát
