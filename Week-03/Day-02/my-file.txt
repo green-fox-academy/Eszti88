@@ -1,4 +1,4 @@
-this is the first row
-this is the second one
-then the third one
-and the fourth
+this is the first line,
+this is the second,
+then the third,
+and the fourth.
