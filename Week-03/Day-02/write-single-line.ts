@@ -1,6 +1,6 @@
 declare function require(path: string): any;
 'use strict';
-export{};
+export { };
 
 const fs = require('fs');
 const charEncoding = 'utf-8';
@@ -19,11 +19,16 @@ function opensFile(fileName: string): string {
 // appends a line to existing file:
 function addsMyName(inputString: string): any {
     let fileContent: string = opensFile('my-file.txt');
-    fs.appendFile('my-file.txt', 'Eszti');
+    try {
+        fs.appendFile('my-file.txt', '\nEszti', (err) => {
+            if (err) throw new Error('Unable to read file: my-file.txt');
+        });
+    }
+    catch {}
 }
 
 console.log(addsMyName('my-file.txt'));
 
 
 /* ha nincs ilyen fájl, megcsinálja, ha van, felülírja
-writeToAFile('my-file.txt', 'Eszti') */   
+writeToAFile('my-file.txt', 'Eszti') */
