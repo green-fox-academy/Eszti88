@@ -16,12 +16,13 @@ function opensFile(fileName: string): string {
     return fs.readFileSync('my-file.txt', charEncoding);
 }
 
-function addsMyName(inputString: string): string {
+// appends a line to existing file:
+function addsMyName(inputString: string): any {
     let fileContent: string = opensFile('my-file.txt');
-    AppendFile('my-file.txt', 'Eszti');
+    fs.appendFile('my-file.txt', 'Eszti');
 }
 
-console.log(addsMyName(my-file.txt));
+console.log(addsMyName('my-file.txt'));
 
 
 /* ha nincs ilyen fájl, megcsinálja, ha van, felülírja
