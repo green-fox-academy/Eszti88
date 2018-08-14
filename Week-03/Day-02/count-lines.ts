@@ -16,14 +16,31 @@ function opensFile(fileName: string): string {
     return fs.readFileSync('my-file.txt', charEncoding);
 }
 
-// here I do what I was told to do:
-function countLines(inputString: string): number {
+// here I do what I was told to do
+function countsLines(inputString: string): number {
+    const fileContent: string = opensFile('my-file.txt');
+    try {
+        if (fileContent !== null) {
+            return fileContent.split('\r\n').length;
+        }
+    } catch {
+        if (fileContent === null) {
+            return 0;
+        }
+    }
+}
+
+console.log(countsLines('my-file.txt'));
+
+/*
+// here I do what I was told to do MÚLT PÉNTEKIG
+function countsLines(inputString: string): number {
     const fileContent: string = opensFile('my-file.txt');
     if (fileContent === null) {
         return 0;
     } else {
         //array-t csinálok, aminek megszámolom az elemeit: hány soros a fájlom
-        return fileContent.split('\r\n').length;         
+        return fileContent.split('\r\n').length;
     }
 }
-console.log(countLines('my-file.txt'));
+console.log(countsLines('my-file.txt')); */
