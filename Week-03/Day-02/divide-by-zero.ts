@@ -1,6 +1,6 @@
 declare function require(path: string): any;
 'use strict';
-export { };
+export{};
 
 // Create a function that takes a number
 // divides ten with it,
@@ -15,7 +15,7 @@ function divideNumber(inputNumber: number): any {
         let result: number = 10 / inputNumber;
         return result;
     } catch (e) {
-        return(e.message);        
+        return (e.message);
     }
 }
 console.log(divideNumber(0));
