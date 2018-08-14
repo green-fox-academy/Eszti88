@@ -26,7 +26,8 @@ function opensFile(fileName: string): string {
             throw new Error('Unable to read file: ' + fileName)
         }
         return fs.readFileSync(fileName, charEncoding);
-    } catch (e) {
+    }
+    catch (e) {
         return (e.message);
     }
 }
