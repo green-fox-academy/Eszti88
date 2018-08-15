@@ -17,11 +17,21 @@ class PostIt {
     textColour: string;
 }
 
-const myPostIt = new PostIt();
+const PostIt1 = new PostIt();
 //console.log(myPostIt);
 
-myPostIt.backgroundColour = 'orange';
-myPostIt.textColour = 'blue';
-myPostIt.text = 'Idea 1';
-console.log(myPostIt);
+PostIt1.backgroundColour = 'orange';
+PostIt1.textColour = 'blue';
+PostIt1.text = 'Idea 1';
+console.log(PostIt1);
+
+const PostIt2 = new PostIt();
+
+PostIt2.backgroundColour = 'pink';
+PostIt2.textColour = 'black';
+PostIt2.text = 'Awesome';
+console.log(PostIt2);
+
+
+
 
