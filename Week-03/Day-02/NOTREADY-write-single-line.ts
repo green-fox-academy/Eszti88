@@ -24,10 +24,12 @@ function addsMyName(inputString: string): any {
             if (err) throw new Error('Unable to read file: my-file.txt');
         });
     }
-    catch {}
+    catch (err) {
+        console.log(err.message);        
+    }
 }
 
-console.log(addsMyName('my-file.txt'));
+addsMyName('my-file.txt');          // nem kell console.log, mert akkor kiírja a terminálba, hogy undefined
 
 
 /* ha nincs ilyen fájl, megcsinálja, ha van, felülírja
