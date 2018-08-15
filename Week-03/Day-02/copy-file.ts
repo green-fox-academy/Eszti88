@@ -15,10 +15,16 @@ function openFile(fileName: string): string {
 } */         //a return utáni rész ment a writeFileSync második paraméterének
 
 function copyFile(fileName: string, newFileName: string): void {
+    let successfulCopy: boolean = true;
     try {
         fs.writeFileSync(newFileName, fs.readFileSync('my-file.txt', charEncoding)); //mibe és mit
     }
-    catch { }
+    catch (e) {
+        successfulCopy = false;
+    }
+    finally {
+        console.log(successfulCopy);        
+    }
 }
 
 copyFile('my-file.txt', 'my-file2.txt');
