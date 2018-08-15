@@ -11,26 +11,34 @@ an orange with blue text: "Idea 1"
 a pink with black text: "Awesome"
 a yellow with green text: "Superb!"*/
 
-class PostIt {
+class postIt {
     backgroundColour: string;
     text: string;
     textColour: string;
 }
 
-const PostIt1 = new PostIt();
+const postIt1 = new postIt();
 //console.log(myPostIt);
 
-PostIt1.backgroundColour = 'orange';
-PostIt1.textColour = 'blue';
-PostIt1.text = 'Idea 1';
-console.log(PostIt1);
+postIt1.backgroundColour = 'orange';
+postIt1.textColour = 'blue';
+postIt1.text = 'Idea 1';
+console.log(postIt1);
 
-const PostIt2 = new PostIt();
+const postIt2 = new postIt();
 
-PostIt2.backgroundColour = 'pink';
-PostIt2.textColour = 'black';
-PostIt2.text = 'Awesome';
-console.log(PostIt2);
+postIt2.backgroundColour = 'pink';
+postIt2.textColour = 'black';
+postIt2.text = 'Awesome';
+console.log(postIt2);
+
+const postIt3 = new postIt();
+postIt3.backgroundColour = 'yellow';
+postIt3.textColour = 'green';
+postIt3.text = 'Superb!'
+
+console.log(postIt3);
+
 
 
 
