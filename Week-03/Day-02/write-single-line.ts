@@ -1,6 +1,6 @@
 declare function require(path: string): any;
 'use strict';
-export { };
+export{};
 
 const fs = require('fs');
 const charEncoding = 'utf-8';
@@ -25,7 +25,7 @@ function addsMyName(inputString: string): any {
         });
     }
     catch (err) {
-        console.log(err.message);        
+        console.log(err.message);
     }
 }
 
