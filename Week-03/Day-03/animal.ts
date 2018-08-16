@@ -1,6 +1,6 @@
 declare function require(path: string): any;
 'use strict';
-export{};
+export { };
 
 /*Create an Animal class
 Every animal has a hunger value, which is a whole number
@@ -11,21 +11,21 @@ Every animal can drink() which decreases their thirst by one
 Every animal can play() which increases both by one*/
 
 class Animal {
-    hungerValue: number;
-    thirstValue: number;
+    private hungerValue: number;
+    private thirstValue: number;
+    constructor(hungerValue: number = 50, thirstValue: number = 50) {
+        this.hungerValue = hungerValue;
+        this.thirstValue = thirstValue;
+    } 
     eat() {
-        this.hungerValue -= 1;
+        this.hungerValue --;
     }
     drink() {
-        this.thirstValue -= 1;
+        this.thirstValue --;
     }
     play() {
-        this.hungerValue += 1;
-        this.thirstValue += 1;
-    }
-    constructor() {
-        this.hungerValue = 50;
-        this.thirstValue = 50;
+        this.hungerValue ++;
+        this.thirstValue ++;
     }
 }
 
