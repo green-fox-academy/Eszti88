@@ -20,4 +20,16 @@ let symmetricMatrix: number[][] = [
   [1, 2, 5]
 ]
 
+function isSymmetric(matrix: number[][]): boolean {
+  let rowNum = matrix.length;
+  for (let row: number = 0; row < rowNum; row++) {
+    let collumnNum = matrix[row].length;
+    for (let collumn: number = row; collumn < collumnNum; collumn++) {
+      if (matrix[row][collumn] !== matrix[collumn][row]) {
+        return false;
+      }
+    } return true;
+  }
+} 
+
 console.log(isSymmetric(symmetricMatrix)); // should print out true
