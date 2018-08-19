@@ -22,7 +22,7 @@ function rainbowBox(size, lineWidth) {
 }
 
 let rainbowBoxSize = 400;
-let rainbowBoxLineWidth = 10;
+let rainbowBoxLineWidth = 25;
 
 rainbowBox(rainbowBoxSize, rainbowBoxLineWidth);
 
