@@ -10,4 +10,4 @@ function earCounter(numOfBunnies: number): number {
     }
 }
 
-console.log(earCounter(4));
+console.log(earCounter(8));
