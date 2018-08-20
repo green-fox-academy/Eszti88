@@ -6,10 +6,16 @@
 export{}
 let name: string = 'Greenfox';
 
-let greet = function (greeting: string = 'Visitor!') {
+/*let greet = function (greeting: string = 'Visitor!') {
     console.log("Greetings, dear " + greeting);
 }
 
 greet(name);
-greet();
+greet(); */
 
+function greet(greeting: string = 'Visitor!') {
+    console.log('Greetings, dear ' + greeting);    
+}
+
+greet(name);
+greet();
