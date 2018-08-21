@@ -19,6 +19,9 @@ class Mentor extends Person {
 }
 
 let mentor1: Mentor = new Mentor('Arnika', 20, 'female', 'senior');
+let mentor2: Mentor = new Mentor();
 
 mentor1.introduce();
 mentor1.getGoal();
+mentor2.introduce();
+mentor2.getGoal();
