@@ -23,5 +23,5 @@ export class Person {
 let person1: Person = new Person();
 let person2: Person = new Person('Eszti', 30, 'female');
 
-person2.introduce();
-person2.getGoal();
+/*person2.introduce();
+person2.getGoal();*/        //kikommentelve, hogy a student.ts ne futtassa le ezt is
