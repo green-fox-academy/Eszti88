@@ -23,7 +23,7 @@ export class Person {
 let person1: Person = new Person('Mark', 46, 'male');
 let person2: Person = new Person();
 
-person1.introduce();
+/*person1.introduce();
 person1.getGoal();
 person2.introduce();
-person2.getGoal();       //kikommentelve, hogy a student.ts ne futtassa le ezt is
+person2.getGoal();*/    //kikommentelve, hogy a student.ts ne futtassa le ezt is
