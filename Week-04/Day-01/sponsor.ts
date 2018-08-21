@@ -3,7 +3,7 @@ import {Person} from "./person";
 
 class Sponsor extends Person {
     private company: string;
-    private hiredStudents: number;
+    protected hiredStudents: number;
 
     constructor(name: string = 'Jane Doe', age: number = 30, gender: string = 'female', company: string = 'Google') {
         super(name, age, gender);
@@ -16,19 +16,26 @@ class Sponsor extends Person {
     }
 
     hire() {
-        return this.hiredStudents++;
+        this.hiredStudents++;
     }
+
 
     getGoal() {
         console.log(`My goal is: Hire brilliant junior software developers.`);
     }
 }
 
-let sponsor1: Sponsor = new Sponsor('Bill', 40, 'male', 'L Ltd');
+let sponsor1: Sponsor = new Sponsor('Elon Musk', 46, 'male', 'SpaceX');
 let sponsor2: Sponsor = new Sponsor();
 
+for (let i: number = 0; i < 3; i++) {
+    sponsor1.hire();
+}
 sponsor1.introduce();
-sponsor1.hire();
 sponsor1.getGoal();
 
+for (let j: number = 0; j < 5; j++) {
+    sponsor2.hire();
+}
 sponsor2.introduce();
+sponsor2.getGoal();
