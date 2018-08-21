@@ -4,7 +4,7 @@ import {Person} from "./person";
 class Mentor extends Person {
     private level: string;
 
-    constructor(name: string, age: number, gender: string, level: string = 'intermediate') {
+    constructor(name: string = 'Jane Doe', age: number = 30, gender: string = 'female', level: string = 'intermediate') {
         super(name, age, gender);
         this.level = level;
     }
