@@ -5,7 +5,7 @@ class Student extends Person {
     private previousOrganization: string;
     private skippedDays: number;
 
-    constructor(name: string, age: number, gender: string, previousOrganization: string, skippedDays: number) {
+    constructor(name: string, age: number, gender: string, previousOrganization: string = 'The School of Life', skippedDays: number) {
         super(name, age, gender);       //ezzel a person.ts adatait hívom meg
         this.previousOrganization = previousOrganization;
         this.skippedDays = 0;       //minden új diáknak 0-t állítok be
