@@ -15,7 +15,5 @@ export abstract class Animal {
         this.isDangerous = false;
     }
 
-    getName() {
-        console.log('I am a ${this.name},');        
-    }
+    abstract.breed(): Animal;
 }
