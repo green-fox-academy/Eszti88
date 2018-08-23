@@ -1,27 +1,12 @@
-import { Animal } from "./animal";
+import {Reptile} from "./reptile";
+import {Mammal} from "./mammal";
+import {Bird} from "./bird";
 
-export class Zoo {
-    private animals: Animal[];
-    private name: string;
-    private yearOfFoundation: number;
+let reptile = new Reptile("Crocodile");
+let mammal = new Mammal("Koala");
+let bird = new Bird("Parrot");
 
-    constructor(name: string, yearOfFoundation: number) {
-        this.name = name,
-        this.yearOfFoundation = yearOfFoundation;
-        this.animals = [];
-    }
-
-    addAnimal(animal: Animal) {
-        this.animals.push(animal);
-    }
-
-    breed(): void {
-        let babyAnimal: Animal[] = this.animals.map(a => a.breed());
-        this.animals.concat(babyAnimal);
-    }
-
-    getName(): void {
-        console.log(this.name);        
-    }
-}
-
+console.log("How do you breed?");
+console.log("A " + reptile.getName() + " is breeding by " + reptile.breed());
+console.log("A " + mammal.getName() + " is breeding by " + mammal.breed());
+console.log("A " + bird.getName() + " is breeding by " + bird.breed());

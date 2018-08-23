@@ -6,14 +6,16 @@ export abstract class Animal {
     protected isSleepy: boolean;
     protected isDangerous: boolean;
 
-    constructor(name: string, age: number) {
+    constructor(name: string) {
         this.name = name;
-        this.age = age;
-        this.gender = gender;
-        this.isHungry = isHungry;
+        this.isHungry = false;
         this.isSleepy = false;
         this.isDangerous = false;
     }
 
-    abstract.breed(): Animal;
+    getName(): string {
+        return this.name;
+    }
+    
+    abstract breed(): string;
 }
