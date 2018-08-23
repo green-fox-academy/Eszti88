@@ -5,7 +5,7 @@ export class FlowersAndTrees {
     protected waterNeeded: number;
     protected waterAbsorbed: number;
 
-    constructor(colour: string, waterATM: number, waterNeeded: number, waterAbsorbed: number) {
+    constructor(colour: string, waterNeeded: number, waterAbsorbed: number) {
         this.colour = colour;
         this.waterATM = 0;
         this.waterNeeded = waterNeeded;
