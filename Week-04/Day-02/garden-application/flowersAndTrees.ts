@@ -1,24 +1,20 @@
-export class flowersAndTrees {
-    color: string;
-    waterAtTheMoment: number;
-    waterNeeded: number;
-    waterAbsorbed: number;
+export class FlowersAndTrees {
 
-    constructor(color: string, waterNeeded: number, waterAbsorbed: number) {
-        this.color = color;
-        this.waterAtTheMoment = 0;
+    protected colour: string;
+    protected waterATM: number;
+    protected waterNeeded: number;
+    protected waterAbsorbed: number;
+
+    constructor(colour: string, waterATM: number, waterNeeded: number, waterAbsorbed: number) {
+        this.colour = colour;
+        this.waterATM = 0;
         this.waterNeeded = waterNeeded;
         this.waterAbsorbed = waterAbsorbed;
     }
 
-    amountOfWater(someWater) {
-        this.waterAtTheMoment += someWater * this.waterAbsorbed;
+    water(amountOfWater) {
+        this.waterATM += amountOfWater * this.waterAbsorbed;
     }
 
-    watering() {
-        if (this.waterAtTheMoment < this.waterNeeded) {
-            console.log;
-            
-        }
-    }
+    //watering();
 }
