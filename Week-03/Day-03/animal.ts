@@ -10,7 +10,7 @@ Every animal can eat() which decreases their hunger by one
 Every animal can drink() which decreases their thirst by one
 Every animal can play() which increases both by one*/
 
-class Animal {
+export class Animal {
     private hungerValue: number;
     private thirstValue: number;
     constructor(hungerValue: number = 50, thirstValue: number = 50) {
@@ -27,7 +27,11 @@ class Animal {
         this.hungerValue ++;
         this.thirstValue ++;
     }
+    getHungry(): number {
+        this.hungerValue;
+    }
 }
+
 
 let puppy = new Animal();
 
