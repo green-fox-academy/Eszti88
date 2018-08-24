@@ -9,6 +9,11 @@ export{};
 //  - Buy milk
 //  - Download games
 //      - Diablo
-let todoText: string = ' - Buy milk\n';
 
-console.log(todoText);
+let todoText: string = ' - Buy milk\n';
+let myToDo: string = 'My todo:\n';
+let downloadGames: string = ' - Download games\n';
+let diablo: string = ' - Diablo';
+let space: string = ' ';
+
+console.log(myToDo + todoText + downloadGames + space + space + space + diablo);
