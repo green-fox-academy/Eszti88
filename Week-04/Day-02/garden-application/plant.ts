@@ -13,7 +13,15 @@ export class Plant {
     this.wateringRatio = wateringRatio;
   }
 
-  needsWater()
+  needsWater(): boolean {
+    if (this.waterAmount < this.thirstLevel) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
-  watering()
+  watering(waterAmount): void {
+    this.waterAmount += this.wateringRatio * waterAmount;
+  }
 }
