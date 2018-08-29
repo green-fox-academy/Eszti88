@@ -4,7 +4,7 @@ import { Plant } from "./plant";
 
 class Flower extends Plant {
 
-  constructor(waterAmount: number = 0) {
+  constructor(name: string = 'yellow flower', waterAmount: number = 0) {
     super(name, waterAmount, 5, 0.75);
   }
 }
