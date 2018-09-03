@@ -8,7 +8,7 @@ export{};
 
 let typo: string = 'Chinchill';
 
-function appendAFunc(inputString: string) {
+function appendAFunc(inputString: string): string {
   return typo += 'a';
 }
 

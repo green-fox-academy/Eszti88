@@ -6,7 +6,7 @@
 
 let baseNum: number = 123;
 
-function doubling(inputNumber: number) {
+function doubling(inputNumber: number): number {
   return baseNum = baseNum * 2;  
 }
 

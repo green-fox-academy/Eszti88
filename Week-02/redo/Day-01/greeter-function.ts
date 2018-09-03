@@ -9,7 +9,7 @@ export{};
 
 let name: string = 'Greenfox';
 
-function greet(specialCase: string = 'Visitor') {
+function greet(specialCase: string = 'Visitor'): void {
   console.log('Greetings, dear ' + specialCase);  
 }
 
@@ -17,7 +17,7 @@ function greet(specialCase: string = 'Visitor') {
 /*function greet(inputString: string) {
   if (!name) {
     console.log('Greetings, dear Visitor!');
-  } else {
+  } else 
     console.log('Greetings, dear ' + name);
   }  
 }*/
