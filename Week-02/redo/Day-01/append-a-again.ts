@@ -5,8 +5,6 @@ export{};
 //    with the following content: `["koal", "pand", "zebr"]`
 // -  Add all elements an `"a"` at the end
 
-//forEach vagy map??
-
 let animals: string[] = ["koal", "pand", "zebr"];
 let newAnimals: string[] = [];
 
@@ -16,5 +14,3 @@ for (let i: number = 0; i < animals.length; i++) {
 }
 
 console.log(newAnimals);
-
-
