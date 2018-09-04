@@ -25,6 +25,19 @@ function hasMoreThan4Candies(inputArray: any[]): string[]{
 
 console.log(hasMoreThan4Candies(students));
 
-
 // create a function that takes a list of students and logs: 
 //  - how many candies they have on average
+
+function candyInAvg(inputArray: any[]): number {
+  let average: number = 0;
+  let candies: number = 0;
+  let amountOfStudents: number = 0;
+  for (let i: number = 0; i < inputArray.length; i++) {
+    candies += inputArray[i]['candies'];
+    amountOfStudents++;
+  }
+  average = candies / amountOfStudents;
+  return average;
+}
+
+console.log(candyInAvg(students));
