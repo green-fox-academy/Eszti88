@@ -1,4 +1,5 @@
 'use strict';
+export{};
 
 // Create a function named `isSymmetric` that takes an n×n integer matrix (two dimensional array) as parameter
 // and returns true, if is that matrix is symmetric (diagonally from top-left to bottom-right)
@@ -13,3 +14,23 @@
 // 7 7 7
 // 6 5 7
 // 1 2 1
+
+let myMatrix: number[][] = [
+  [1, 0, 1],
+  [0, 2, 2],
+  [1, 2, 5]
+];
+
+function isSymmetric(inputMatrix: number[][]): boolean {
+  let rowNum: number = myMatrix.length;
+  for (let i: number = 0; i < rowNum; i++) {
+    let colNum: number = myMatrix[i].length;
+    for (let j: number = 0; j < colNum; j++) {
+      if (myMatrix[i][j] !== myMatrix[j][i]) {
+        return false;
+      }
+    } return true;
+  }
+}
+
+console.log(isSymmetric(myMatrix));
