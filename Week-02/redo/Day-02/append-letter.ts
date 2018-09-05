@@ -4,18 +4,16 @@
 // The parameter should be a list.
 
 let far: string[] = ['bo', 'anacond', 'koal', 'pand', 'zebr'];
-let newFar: string[] = [];
 
 function appendA(inputArray: string[]) {
+  let newFar: string[] = [];
   for (let i: number = 0; i < inputArray.length; i++) {
     newFar.push(inputArray[i] + 'a');
-  }  
-}
-appendA(far);
+  } 
+  return newFar; 
+};
 
-console.log(newFar);
-
-//console.log(appendA(far));
+console.log(appendA(far));
 
 // The output should be: 'boa', 'anaconda', 'koala', 'panda', 'zebra'
 export = appendA;
