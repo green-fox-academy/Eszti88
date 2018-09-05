@@ -7,11 +7,35 @@ export{};
 
 let numList: number[] = [1, 2, 3, 8, 5, 6];
 
-console.log(numList[3]);    //prints 8 out
+console.log(numList[3]);
 
-let newList: number[] = numList.map() //ha elem 8, akkor legyen 4
+//megoldás map built-in methoddal:
 
-console.log(numList[3]);    //should print 4 out
+let newList: number[] = numList.map(elem => {
+  if (elem === 8) {
+    elem = 4;
+  }
+  return elem;
+});
 
+console.log(newList[3]);
 
+//megoldás for looppal:
+for (let i: number = 0; i < numList.length; i++) {
+  if(numList[i] === 8) {
+    numList[i] = 4;
+  }
+}
 
+console.log(numList[3]);
+
+//megoldás forEach built-in methoddal:
+
+numList.forEach(elem => {
+  if (elem === 8) {
+    elem = 4;
+  }
+  return elem;
+})
+
+console.log(numList[3]);
