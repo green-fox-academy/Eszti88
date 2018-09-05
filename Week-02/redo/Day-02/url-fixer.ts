@@ -5,6 +5,6 @@ export{};
 // Also, the URL is missing a crutial component, find out what it is and insert it too!
 
 let url: string = 'https//www.reddit.com/r/nevertellmethebots';
-url = 'https://www.reddit.com/r/nevertellmetheodds';
-
+url = url.substr(0, 5) + ':' + url.substr(5);
+url = url.replace('bot', 'odd');
 console.log(url);

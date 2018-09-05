@@ -17,9 +17,9 @@ function quoteSwap(inputArray: string[]): string[] {
 }
 
 // eltávolítom a vesszőket:
-/* a replace nem működik stringen
+// a replace nem működik stringen
 words = words.replace(', ', '');
-words = words.join(' ');*/
+/*words = words.join(' ');*/
 
 console.log(quoteSwap(words));
 

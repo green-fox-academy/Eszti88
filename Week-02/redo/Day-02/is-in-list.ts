@@ -6,19 +6,8 @@
 
 let listOfNumbers: number[] = [2, 4, 6, 8, 10, 12, 14, 16];
 
-function checkNums(inputArray: number[]) {
-  let result: boolean = false;
-
-  for (let i: number = 0; i < inputArray.length; i++) {
-    if (inputArray.indexOf(4) > -1 && inputArray.indexOf(8) > -1 && inputArray.indexOf(12) > -1 && inputArray.indexOf(16) > -1) {
-      result = true;
-    }
-  }
-  if (result) {
-    return 'true';
-  } else {
-    return 'false';
-  }
+function checkNums(inputArray: number[]): boolean {
+  return inputArray.indexOf(4) > -1 && inputArray.indexOf(8) > -1 && inputArray.indexOf(12) > -1 && inputArray.indexOf(16) > -1;
 }
 
 /*function checkNums(inputArray: number[]): boolean {
