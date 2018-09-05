@@ -16,8 +16,8 @@ function hasMoreThan4Candies(inputArray: any[]): string[]{
   let studentList: string[] = [];
 
   inputArray.forEach(elem => {
-    if (elem['candies'] > 4) {
-      studentList.push(elem['name']);
+    if (elem.candies > 4) {
+      studentList.push(elem.name);
     }
   });
   return studentList;
@@ -33,7 +33,7 @@ function candyInAvg(inputArray: any[]): number {
   let candies: number = 0;
   let amountOfStudents: number = 0;
   for (let i: number = 0; i < inputArray.length; i++) {
-    candies += inputArray[i]['candies'];
+    candies += inputArray[i].candies;
     amountOfStudents++;
   }
   average = candies / amountOfStudents;
