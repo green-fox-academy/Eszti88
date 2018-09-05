@@ -20,7 +20,7 @@ function getNameAndBalance(accNum: number) {
   return nameAndBalanceList;
 }
 
-console.log(getNameAndBalance(11234543));
+console.log(getNameAndBalance(43546731));
 
 // Create function that transfers an amount of cash from one account to another
 // it should have four parameters:
@@ -28,7 +28,9 @@ console.log(getNameAndBalance(11234543));
 //  - from accountNumber
 //  - to accountNumber
 //  - amount of cash to transfer
-//
+
+function transferAmount(accNum: number, fromAccNum: number, toAccNum: number, amountToTransfer: number) {}
+
 // Log "404 - account not found" if any of the account numbers don't exist to the console.
 // transferAmount(accounts, 43546731, 23456311, 500.0);
 //After printing the "accounts" it should look like:

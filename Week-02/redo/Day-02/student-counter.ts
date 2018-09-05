@@ -15,7 +15,7 @@ const students: any[] = [
 function candyCounter(inputArray: any[]): number {
   let candies: number = 0;
   for (let i: number = 0; i < inputArray.length; i++) {
-    candies += inputArray[i]['candies'];
+    candies += inputArray[i].candies;
   }  
   return candies;
 }
@@ -40,8 +40,8 @@ function sumOfAge(inputArray: any[]): number {
   let sum: number = 0;
 
   inputArray.forEach(elem => {
-    if (elem["candies"] < 5) {
-      sum += elem['age'];
+    if (elem.candies < 5) {
+      sum += elem.age;
     }
   });
   return sum;
