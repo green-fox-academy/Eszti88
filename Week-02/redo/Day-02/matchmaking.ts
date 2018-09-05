@@ -16,10 +16,6 @@ function makingMatches(inputString1: string[], inputString2: string[]) {
   return pairs;
 }
 
-makingMatches(girls, boys);
-makingMatches(girls, boys);
 console.log(makingMatches(girls, boys));
-
-//console.log(makingMatches(girls, boys));
 
 //export = makingMatches;
