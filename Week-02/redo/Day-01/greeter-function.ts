@@ -13,14 +13,5 @@ function greet(specialCase: string = 'Visitor'): void {
   console.log('Greetings, dear ' + specialCase);  
 }
 
-// ÁRNIKA, így miért nem működik?
-/*function greet(inputString: string) {
-  if (!name) {
-    console.log('Greetings, dear Visitor!');
-  } else 
-    console.log('Greetings, dear ' + name);
-  }  
-}*/
-
 greet(name);
 greet();

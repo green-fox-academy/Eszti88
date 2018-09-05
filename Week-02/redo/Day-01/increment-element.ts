@@ -6,6 +6,7 @@
 
 let numList: number[] = [1, 2, 3, 4, 5];
 
-numList[2] = numList[2]++;
+
+numList[2] = numList[2]++; ++ helyett +1 
 
 console.log(numList[2]);      //should print 4 out

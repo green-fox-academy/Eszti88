@@ -9,7 +9,7 @@ let numList: number[] = [1, 2, 3, 8, 5, 6];
 
 console.log(numList[3]);    //prints 8 out
 
-numList.map
+let newList: number[] = numList.map() //ha elem 8, akkor legyen 4
 
 console.log(numList[3]);    //should print 4 out
 
