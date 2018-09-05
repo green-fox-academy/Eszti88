@@ -15,6 +15,6 @@ let myTodo: string = 'My todo:\n';
 let downloadGames: string = ' - Download games\n';
 let diablo: string = '    - Diablo';
 
-todoText = myTodo + todoText + downloadGames + diablo;
+todoText = myTodo.concat(todoText, downloadGames, diablo);
 
 console.log(todoText);
