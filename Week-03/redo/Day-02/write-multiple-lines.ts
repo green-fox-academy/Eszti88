@@ -11,6 +11,8 @@ export{};
 // to the file and each line should be 'apple'
 // The function should not raise any error if it could not write the file.
 
+// hibaüzenet nélkül: greenfox/Eszti88/Week-3/Day-2-ben van, itt a hibaüzenetet is gyakoroltam
+
 const fs = require('fs');
 const charEncoding = 'utf-8';
 
