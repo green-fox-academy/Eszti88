@@ -22,7 +22,7 @@ let dominoes = initializeDominoes();
 /** Order them into one snake where the adjacent dominoes have the same numbers on their adjacent sides */
 /** eg: [2, 4], [4, 3], [3, 5] ... */
 
-function sortDominoes(inputDominoes: Domino[]) {
+function sortDominoes(inputDominoes: Domino[]): number[] {
   let sortedDominoes: any[] = [inputDominoes[0]];
   for (let i: number = 0; i < inputDominoes.length; i++) {
     for (let j: number = 0; j < inputDominoes.length; j++) {
@@ -32,7 +32,7 @@ function sortDominoes(inputDominoes: Domino[]) {
     }
   }
   dominoes = sortedDominoes;
-  return sortDominoes;
+  return sortedDominoes;
 }
 
 sortDominoes(dominoes);
