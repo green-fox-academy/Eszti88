@@ -16,7 +16,7 @@ function initializePokemon(): Pokemon[] {
   ];
 }
 
-function chooseMe(inputPokemon: Pokemon[]) {
+function chooseMe(inputPokemon: Pokemon[]): string {
   let theOne: string = '';
   for (let i: number = 0; i < inputPokemon.length; i++) {
     if (inputPokemon[i]['effectiveAgainst'] === 'leaf') {
