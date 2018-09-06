@@ -10,16 +10,6 @@ function checkNums(inputArray: number[]): boolean {
   return inputArray.indexOf(4) > -1 && inputArray.indexOf(8) > -1 && inputArray.indexOf(12) > -1 && inputArray.indexOf(16) > -1;
 }
 
-/*function checkNums(inputArray: number[]): boolean {
-  for (let i: number = 0; i < inputArray.length; i++) {
-    if (inputArray[i] === 4 && inputArray[i] === 8 && inputArray[i] === 12 && inputArray[i] === 16) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-}*/
-
 console.log(checkNums(listOfNumbers));
 
 export = checkNums;
