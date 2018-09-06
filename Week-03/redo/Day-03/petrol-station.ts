@@ -18,7 +18,7 @@ class Station {
   }
 }
 
-let myStation: Station = new Station(500);  //let's set gasAmount to 500 units just to try if the program is running or not
+let myStation = new Station(500);  //let's set gasAmount to 500 units just to try if the program is running or not
 
 /*Car
 gasAmount
@@ -37,8 +37,8 @@ class Car {
   }
 }
 
-let myCar: Car = new Car();
+let myCar = new Car();
 
-myStation.refill(myCar);
+//myStation.refill(myCar);
 console.log(myCar);
 console.log(myStation);
