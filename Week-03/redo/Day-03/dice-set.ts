@@ -36,6 +36,8 @@ class DiceSet {
     }
 }
 
+let diceSet = new DiceSet();
+
 function only6(inputDiceSet: DiceSet): void {
     for (let i: number = 0; i < inputDiceSet.numOfDices; i++) {
         while (inputDiceSet.dices[i] !== 6) {
@@ -46,10 +48,10 @@ function only6(inputDiceSet: DiceSet): void {
     }
 }
 
-let diceSet = new DiceSet();
 diceSet.roll();
 diceSet.getCurrent();
 console.log("------------------");
+only6(diceSet);
 /*diceSet.reroll();
 diceSet.getCurrent();
 console.log("------------------");
@@ -59,4 +61,3 @@ diceSet.getCurrent();
 console.log("------------------");
 diceSet.reroll(4);
 diceSet.getCurrent();*/
-only6(diceSet);
