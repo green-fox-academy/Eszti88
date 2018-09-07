@@ -9,7 +9,7 @@ countUsable() -> sharpie is usable if it has ink in it
 removeTrash() -> removes all unusable sharpies*/
 
 class SharpieSet extends Sharpie{
-  sharpie: Sharpie[];
+  private sharpie: Sharpie[];
 
   constructor() {
     super();
