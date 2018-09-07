@@ -6,7 +6,7 @@ a title
 a text
 a publicationDate*/ 
 
-class BlogPost {
+export class BlogPost {
   private authorName: string;
   private title: string;
   private text: string;
