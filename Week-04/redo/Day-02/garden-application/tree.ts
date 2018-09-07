@@ -9,5 +9,6 @@ export class Tree extends Plant {
     this.name = name;
     this.absorbingRatio = 0.4;
     this.needWaterLimit = 10;
+    this.currenWaterAmount = 0;    
   }
 }

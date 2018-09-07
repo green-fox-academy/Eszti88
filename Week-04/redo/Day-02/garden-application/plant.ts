@@ -7,27 +7,18 @@ export class Plant {
   protected needWaterLimit: number;
 
   constructor(name: string) {
-    this.name = name;
-    this.currenWaterAmount = 0;
+    this.name = name;        
   }
 
-  public isThisty() {
-    if (this.needWaterLimit < 5) {
-      return true;      
+  public getName() {
+    return this.name;
+  }
+
+  public isThirsty(): boolean {
+    if (this.currenWaterAmount < this.needWaterLimit) {
+      return true;
     } else {
       return false;
     }
-  }
-
-  public getCurrentWaterAmount() {
-    return this.currenWaterAmount;
-  }
-
-  public getAbsorbingRatio() {
-    return this.absorbingRatio;
-  }
-
-  public getWater(inputWaterAmount: number) {
-    return this.currenWaterAmount += inputWaterAmount * this.absorbingRatio;
   }
 }

@@ -8,6 +8,7 @@ export class Flower extends Plant {
     super(name);
     this.name = name;
     this.absorbingRatio = 0.75;
-    this.needWaterLimit = 5;
+    this.needWaterLimit = 5; 
+    this.currenWaterAmount = 0;   
   }
 }

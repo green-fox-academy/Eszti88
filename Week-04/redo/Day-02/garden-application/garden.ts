@@ -11,14 +11,13 @@ export class Garden {
     this.plants.push(inputPlant);
   }
 
-  public watering(inputWaterAmount: number): void {
+  public status() {
     this.plants.forEach(elem => {
-      if (elem.isThisty) {
-        elem.getWater;
+      if (elem.isThirsty) {
+        console.log(`The ${elem.getName()} needs water.`);        
+      } else {
+        console.log(`The ${elem.getName()} does not need water`);        
       }
     })
   }
 }
-
-
-
