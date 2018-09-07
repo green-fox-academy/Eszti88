@@ -7,14 +7,18 @@ export class Garden {
     this.plants = [];
   }
 
-  public add(inputPlant: Plant) {
-    this.plants.push(inputPlant);    
+  public add(inputPlant: Plant): void {
+    this.plants.push(inputPlant);
   }
 
-  public watering() {
-
+  public watering(inputWaterAmount: number): void {
+    this.plants.forEach(elem => {
+      if (elem.isThisty) {
+        elem.getWater;
+      }
+    })
   }
 }
 
-let myGarden = new Garden;
+
 

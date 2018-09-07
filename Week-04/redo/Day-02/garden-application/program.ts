@@ -17,3 +17,7 @@ myGarden.add(tree1);
 myGarden.add(tree2);
 
 console.log(myGarden);
+
+myGarden.watering(40);
+
+console.log(myGarden);
