@@ -31,7 +31,7 @@ class Farm {
     let index: number = 0;
     let theLeastHUngry: Animal = this.animals[index];
     for (let i: number = 0; i < this.animals.length; i++) {
-      if (this.animals[i][this.hungerValue] < this.animals[index][this.hungerValue]) {
+      if (this.animals[i].getHungry < this.animals[index].getHungry) {
         index = i;
       }
     }

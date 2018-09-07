@@ -16,7 +16,7 @@ class SharpieSet {
   }
 
   public countUsable(inputSharpie: Sharpie): boolean {
-    return this.inkAmount > 0;      //getinkamount(): looppal a sharpie inkamountját
+    return  > 0;      //getinkamount(): looppal a sharpie inkamountját
   }
 
  // public removeTrash() {

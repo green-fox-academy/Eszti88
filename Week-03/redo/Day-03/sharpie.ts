@@ -21,6 +21,11 @@ export class Sharpie {
   public use() {
     return this.inkAmount--;
   }
+
+  public getInkAmount() {
+    return this.inkAmount;
+  }
+
 }
 
 let mySharpie = new Sharpie('orange', 50);

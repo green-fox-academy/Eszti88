@@ -28,6 +28,10 @@ export class Animal {
   public play(): number {
     return this.hungerValue++ && this.thirstValue++;
   }
+
+  public getHungry(): number {
+    return this.hungerValue;
+  }
 }
 
 let dog = new Animal;
