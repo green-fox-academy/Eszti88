@@ -16,11 +16,11 @@ class SharpieSet {
   }
 
   public countUsable(inputSharpie: Sharpie): boolean {
-    return  > 0;      //getinkamount(): looppal a sharpie inkamountját
-  }
-
- // public removeTrash() {
-
+    for (let i: number = 0; i < this.sharpie.length; i++) {
+      if (i > 0) {
+        return inputSharpie[i].getInkAmount;
+      }
+    };      
   }
 }
 
