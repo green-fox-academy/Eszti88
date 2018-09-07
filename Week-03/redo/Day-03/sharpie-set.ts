@@ -8,16 +8,15 @@ it contains a list of Sharpie
 countUsable() -> sharpie is usable if it has ink in it
 removeTrash() -> removes all unusable sharpies*/
 
-class SharpieSet extends Sharpie{
+class SharpieSet {
   private sharpie: Sharpie[];
 
   constructor() {
-    super();
     this.sharpie = [];
   }
 
   public countUsable(inputSharpie: Sharpie): boolean {
-    return this.inkAmount > 0;
+    return this.inkAmount > 0;      //getinkamount(): looppal a sharpie inkamountját
   }
 
  // public removeTrash() {

@@ -13,9 +13,8 @@ class Station {
   }
 
   public refill(inputCar: Car) {
-    this.gasAmount -= inputCar.capacity; 
-    inputCar.gasAmount += inputCar.capacity;  
-  }
+    this.gasAmount -= inputCar.getCapacity();    //a car osztályban függvény, itt ráhiv.
+    }
 }
 
 let myStation = new Station(500);  //let's set gasAmount to 500 units just to try if the program is running or not
@@ -35,10 +34,24 @@ class Car {
     this.gasAmount = gasAmount;
     this.capacity = capacity;
   }
+
+  public getCapacity() {
+    return this.capacity;
+  }
+
+  public getGasAmount() {
+    return this.gasAmount += this.capacity;
+  }
 }
 
 let myCar = new Car();
 
-//myStation.refill(myCar);
 console.log(myCar);
 console.log(myStation);
+
+myStation.refill(myCar);
+myCar.getGasAmount();
+
+console.log(myCar);
+console.log(myStation);
+

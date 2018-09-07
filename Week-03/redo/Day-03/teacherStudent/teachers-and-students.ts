@@ -8,7 +8,7 @@ Teacher
 teach(student) -> calls the students learn method
 answer()*/
 
-class Student {
+/*class Student {
   public learn(inputTeacher: Teacher) {
     return this.teacher.teach();
   }
@@ -28,4 +28,4 @@ class Teacher {
       return 'valami';
     }
   }
-}
+}*/

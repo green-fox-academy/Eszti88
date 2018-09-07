@@ -12,7 +12,7 @@ export class Sharpie {
   private width: number;
   protected inkAmount: number = 100;
 
-  constructor(colour?: string, width?: number) {
+  constructor(colour: string, width: number) {
     this.colour = colour;
     this.width = width;
     this.inkAmount = this.inkAmount;
