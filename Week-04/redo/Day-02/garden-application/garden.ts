@@ -20,4 +20,19 @@ export class Garden {
       }
     })
   }
+
+  public watering(inputWaterAmount: number): void {
+    let counter: number = 0;
+    this.plants.forEach(elem => {
+      if (elem.isThirsty) {
+        counter++;
+      }
+    })
+
+    this.plants.forEach(elem => {
+      if (elem.isThirsty) {
+        elem.getWater(inputWaterAmount / counter);
+      }
+    })
+  }
 }

@@ -1,5 +1,7 @@
 'use strict';
 
+import { Garden } from "./garden";
+
 export class Plant {
   protected name: string;
   protected currenWaterAmount: number;
@@ -7,7 +9,7 @@ export class Plant {
   protected needWaterLimit: number;
 
   constructor(name: string) {
-    this.name = name;        
+    this.name = name;
   }
 
   public getName() {
@@ -15,10 +17,10 @@ export class Plant {
   }
 
   public isThirsty(): boolean {
-    if (this.currenWaterAmount < this.needWaterLimit) {
-      return true;
-    } else {
-      return false;
-    }
+    return this.currenWaterAmount < this.needWaterLimit;
+  }
+
+  public getWater(inputWaterAmount: number): void {
+    this.currenWaterAmount += inputWaterAmount * this.absorbingRatio;
   }
 }

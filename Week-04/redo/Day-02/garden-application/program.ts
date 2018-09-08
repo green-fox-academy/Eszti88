@@ -16,6 +16,13 @@ myGarden.add(flower2);
 myGarden.add(tree1);
 myGarden.add(tree2);
 
-//console.log(myGarden);
-
+console.log(myGarden);
 myGarden.status();
+console.log('\nWatering with 40:\n');
+myGarden.watering(40);
+myGarden.status();
+console.log('\nWatering with 70:\n');
+myGarden.watering(70);
+myGarden.status();
+console.log(myGarden);
+
