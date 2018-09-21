@@ -60,9 +60,7 @@ app.post('/posts', jsonParser, (req, res) => {
           console.log(err.message);
           return;
         } else {
-          res.status(200).json({
-            newPost,
-          });
+          res.status(200).json(newPost);
         }
       });
     });
@@ -114,6 +112,24 @@ app.put('/posts/:id/downvote', jsonParser, (req, res) => {
       });
     });
   }
+});
+
+//delete post:
+app.delete('/posts/:id', (req, res) => {
+  let id = req.params.id;
+
+  if (id) {
+    conn.query(`DELETE FROM posts WHERE id = ${id};`, (err, result) => {
+      if (err) {
+        console.log(err.message);
+        return;
+      } else {
+        res.status(200).json({
+          status: `post with id ${id} has been successfully removed.`
+        });
+      }
+    });
+  }  
 });
 
 app.listen(PORT, () => {
