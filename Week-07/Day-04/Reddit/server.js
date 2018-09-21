@@ -16,12 +16,12 @@ let conn = mysql.createConnection({
   database: 'reddit',
 });
 
-conn.connect(function(err) {
+conn.connect(function (err) {
   if (err) {
     console.log('Error connecting', err.message);
     return;
   }
-  console.log('Connection established.');  
+  console.log('Connection established.');
 });
 
 //checking if server is running:
@@ -38,7 +38,9 @@ app.get('/posts', (req, res) => {
       console.log(err.message);
       return;
     }
-    res.send(rows);
+    res.status(200).json({
+      rows
+    });
   });
 });
 
@@ -51,7 +53,7 @@ app.post('/posts', jsonParser, (req, res) => {
     conn.query(`INSERT INTO posts (title, url) VALUES ('${title}', '${url}');`, (err, result) => {
       if (err) {
         console.log(err.message);
-        return;        
+        return;
       }
       conn.query(`SELECT * FROM posts WHERE id = ${result.insertId};`, (err, newPost) => {
         if (err) {
@@ -67,6 +69,53 @@ app.post('/posts', jsonParser, (req, res) => {
   }
 });
 
+//upvoting:
+app.put('/posts/:id/upvote', jsonParser, (req, res) => {
+  let id = req.params.id;
+  //console.log(id);  
+
+  if (id) {
+    conn.query(`UPDATE posts SET score = score + 1 WHERE id = ${id};`, (err, result) => {
+      //console.log('Update has happened.');      
+      if (err) {
+        console.log(err.message);
+        return;
+      }
+      conn.query(`SELECT * FROM posts WHERE id = ${id};`, (err, incScore) => {
+        //console.log('Select has happened.');        
+        if (err) {
+          console.log(err.message);
+          return;
+        } else {
+          res.status(200).json(incScore);
+        }
+      });
+    });
+  }
+});
+
+//downvoting:
+app.put('/posts/:id/downvote', jsonParser, (req, res) => {
+  let id = req.params.id;
+
+  if (id) {
+    conn.query(`UPDATE posts SET score = score - 1 WHERE id = ${id};`, (err, result) => {
+      if (err) {
+        console.log(err.message);
+        return;
+      }
+      conn.query(`SELECT * FROM posts WHERE id = ${id};`, (err, decScore) => {
+        if (err) {
+          console.log(err.message);
+          return;
+        } else {
+          res.status(200).json(decScore);
+        }
+      });
+    });
+  }
+});
+
 app.listen(PORT, () => {
-  console.log(`The server is running and listening to port ${PORT}.`);  
+  console.log(`The server is running and listening to port ${PORT}.`);
 })
