@@ -1,0 +1,46 @@
+* {
+  margin: 0 auto;
+}
+
+body {
+  background-color: #419464;
+  color: #CAE5A2;
+}
+
+table thead tr {
+  background-color: #600613;  
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #CAE5A2;
+  color: #600613;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #deba7e;
+  color: #600613;
+}
+
+.wrapper {
+  display: flex;    //????
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+table td, table th {
+  border: 1px solid #600613;
+}
+
+table tbody td[data-currency="$"]::before {
+  content: "$";
+}
