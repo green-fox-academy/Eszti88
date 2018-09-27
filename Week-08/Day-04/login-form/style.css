@@ -1,0 +1,42 @@
+body {
+  background-color: #d2bba0;
+  width: 100%;
+  font-family: Consolas;
+}
+
+.form {
+  background-color: #f2efc7;
+  height: 220px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.button {
+  background-color: #9f7e69;
+  color: #ffeee2;
+  margin-top: 30px;
+  border: 0;
+  width: 80px;
+  height: 20px;
+  font-size: 0.7rem;
+  font-family: Consolas;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 3px 0 rgba(255, 255, 255, 0.3);
+}
+
+.text1 {
+  font-size: 20px;
+}
+
+.text2 {
+  font-size: 15px;
+}
+
+.text3 {
+  font-size: 8px;
+  float: right;
+  margin-top: 10px;
+}
