@@ -38,9 +38,9 @@ let isBonus: boolean = false;
 // and is_bonus is false decrement c by 1
 // if is_bonus is true c should remain the same
 
-if (credits >= 50 && isBonus == false) {
-    c = c - 2;
-} else if (credits < 50 && isBonus == false) {
+if (credits >= 50 && !isBonus) {   // isBonus == false helyett !, mert a Boolean kiértékelődik
+    c -= 2;
+} else if (credits < 50 && !isBonus) {
     c -= 1;
 } if (isBonus) {
     c = c;

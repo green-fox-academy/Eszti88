@@ -47,11 +47,4 @@ function addNumbers(): any {
 }
 addNumbers();
 
-
-
-
-
-
-
-
 //console.log(addNumbers('matrix.txt'));

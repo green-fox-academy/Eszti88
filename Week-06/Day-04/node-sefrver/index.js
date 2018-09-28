@@ -1,3 +1,5 @@
+'use strict';
+
 const express = require('express'); // a node module mappából szeretném az expresst használni
 const path = require('path');
 const app = express();              //szeretnék egy express szervert

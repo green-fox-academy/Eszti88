@@ -1,10 +1,8 @@
-import { Plant } from "./plant";
+import { Garden } from "./garden";
 
 'use strict';
 
-class Flower extends Plant {
+class Flower extends Garden {
 
-  constructor(name: string = 'yellow flower', waterAmount: number = 0) {
-    super(name, waterAmount, 5, 0.75);
-  }
+  
 }

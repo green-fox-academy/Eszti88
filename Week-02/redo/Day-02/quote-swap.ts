@@ -8,18 +8,17 @@
 
 let words: string[] = ['What', 'I', 'do', 'create,', 'I', 'cannot', 'not', 'understand.'];
 
-// megcserélem a 2. és 5. elemeket a tömbben:
+// megcserélem a 2. és 5. elemeket a tömbben, majd eltávolítom a vesszőket:
 function quoteSwap(inputArray: string[]): string[] {
   let change: string = inputArray[5];
   inputArray[5] = inputArray[2];
   inputArray[2] = change;
+  
+  /*let newWords: string[] = inputArray.map(elem => elem.replace(',', ' '));
+  newWords.join(' ');
+  return newWords;*/
   return inputArray;
 }
-
-// eltávolítom a vesszőket:
-// a replace nem működik stringen
-words = words.replace(', ', '');
-/*words = words.join(' ');*/
 
 console.log(quoteSwap(words));
 

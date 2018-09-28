@@ -8,7 +8,7 @@ class Student extends Person {
     constructor(name: string = 'Jane Doe', age: number = 30, gender: string = 'female', previousOrganization: string = 'The School of Life') {
         super(name, age, gender);       //ezzel a person.ts adatait hívom meg
         this.previousOrganization = previousOrganization;
-        this.skippedDays = 0;       //minden új diáknak 0-t állítok be
+        this.skippedDays = 0;       //minden új diáknak 0-t állítok be, ezt a constructorba nem kell beírni
     }
 
     getGoal() {

@@ -120,7 +120,7 @@ app.delete('/posts/:id', (req, res) => {
 
   if (id) {
     conn.query(`DELETE FROM posts WHERE id = ${id};`, (err, result) => {
-      if (err) {
+      if (err) {        
         console.log(err.message);
         return;
       } else {

@@ -1,43 +1,15 @@
-import { Plant } from "./plant";
-
 'use strict';
 
-class Garden {
+export class Garden {
 
-  protected plants: Plant[] = [];
+  protected name: string;
+  protected colour: string;
+  protected waterAmount: number;
+  protected needsWater: boolean;
 
-  watering(wateringAll: number, details: boolean): void {
-    let howManyNeedsWater: number = 0;
-    let myStatement: string;
-
-    this.plants.forEach(elem => {
-      if (elem.needsWater()) {
-        howManyNeedsWater++;
-      }
-    });
-
-    if (howManyNeedsWater === 0) {
-      console.log('Watering is not necessary ');
-      return;
-    } else {
-      console.log(`Watering with $(wateringAll) `);
-      return;
-    }
-
-    this.plants.forEach(elem => {
-      if (details) {
-        (elem.needsWater()) {
-          console.log(`$(wateringAll / howManyNeedsWater) water is added.`);
-      } else {
-        console.log(`The water level of $(elem.name) is $(elem.waterAmount) so $(myStatement) `);
-      }
-      if (elem.needsWater()) {
-        elem.watering(wateringAll / howManyNeedsWater);
-      }
-    });
-
-    if (details) {
-      console.log('\r');      
-    } 
+  constructor(name: string, colour: string, needsWater: boolean) {
+    this.name = name;
+    this.colour = colour;
+    this.needsWater = needsWater;
   }
 }

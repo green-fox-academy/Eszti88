@@ -1,5 +1,5 @@
 'use strict';
-export{};
+export { };
 
 const accounts: any[] = [
   { clientName: 'Igor', accountNumber: 11234543, balance: 203004099.2 },
@@ -11,13 +11,16 @@ const accounts: any[] = [
 // getNameAndBalance(11234543);
 // should return: ['Igor', 203004099.2]
 
-function getNameAndBalance (inputList: string[]) {
-    let nameAndBalance: string[]= [];
-    for (let i: number = 0; i < inputList.length; i++) {
-        console.log(inputList[i]["clientName"], inputList[i]["balance"]);        
+function getNameAndBalance(inputNumber: number, inputList: any[]) {
+  let nameAndBalance: any[] = [];
+  for (let i: number = 0; i < inputList.length; i++) {
+    if (inputList[i]["accontNumber"] = inputNumber) {
+      nameAndBalance.push(inputList[i]["clientName"], inputList[i]["balance"]);
+      return nameAndBalance;
     }
+  }
 }
-(getNameAndBalance(accounts));
+console.log(getNameAndBalance(11234543, accounts));
 
 
 // Create function that transfers an amount of cash from one account to another
@@ -41,30 +44,7 @@ function getNameAndBalance (inputList: string[]) {
   accounts
 };*/
 
-function transferAmount(database, fromAccount, toAccount, amountOfMoney) {
-  let doesItExistNumber: number = 0;
-  database.forEach (function(elem) {
-    if (elem.accountNumber == fromAccount || elem.accountNumber == toAccount) {
-      doesItExistNumber += 1;
-    }
-  });
-  if (doesItExistNumber < 2) {
-    console.log('404 - account not found');    
-  }
-  else {
-    database.forEach (function(elem) {
-      if (elem.accountNumber == fromAccount) {
-        elem.balance -= amountOfMoney;
-      }});
-      database.forEach (function(elem) {
-        if (elem.accountNumber == toAccount) {
-          elem.balance += amountOfMoney;
-        }});
-        console.log(accounts);        
-  }
 }
-getNameAndBalance(11234543);
-transferAmount(accounts, 43546731, 23456311, 500.0);
 
 
 
