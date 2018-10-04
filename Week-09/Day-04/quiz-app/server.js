@@ -57,6 +57,18 @@ app.get('/game', (req, res) => {
   });
 });
 
+app.get('/questions', (req, res) =>{
+  conn.query('SELECT * FROM questions;', (error, questions) => {
+    if (error) {
+      console.log(error);
+      res.status(400).json({ questions: 'Something went wrong.'});
+      return;
+    } else {
+      res.status(200).json({ questions: questions});
+    }
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`My local server is  running and listening to port ${PORT}.`);
 });
