@@ -9,6 +9,10 @@ const assets = express.static('assets');
 const app = express();
 const PORT = 3000;
 
+app.use(jsonParser);
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(assets);
+
 
 const conn = mysql.createConnection({
   host: '127.0.0.1',
@@ -28,13 +32,29 @@ conn.connect((err) => {
 });
 
 
-app.use(jsonParser);
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(assets);
-
+/*app.get('/game', (req, res) => {
+  res.status(200).sendFile(path.join(__dirname, 'assets/index.html'));
+});*/
 
 app.get('/game', (req, res) => {
-  res.status(200).sendFile(path.join(__dirname, 'assets/index.html'));
+  let randomNumber = Math.floor(Math.random() * 11);
+  conn.query(`SELECT * FROM questions WHERE id = ${randomNumber};`, (error, questions) => {
+    if (error) {
+      console.log(error);
+      res.status(400).json({ questions: 'Something went wrong.' });
+      return;
+    } else {
+      conn.query(`SELECT * FROM answers WHERE question_id = ${randomNumber};`, (error, answers) => {
+        if (error) {
+          console.log(error);
+          res.status(400).json({ answers: 'Something is not okay.' });
+          return;
+        } else {
+          res.status(200).json({ questions: questions, answers: answers });
+        }
+      });
+    }    
+  });
 });
 
 app.listen(PORT, () => {
